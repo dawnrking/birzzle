@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,bg1_png,btn_setting_png,score_bar_png,b5_png,timer_png,b2_png,b3_png,progressbar_png,pink_bird_normal_png,purple_bird_normal_png,red_bird_normal_png,white_bird_normal_png,yellow_bird_normal_png,blue_bird_normal_png,green_bird_normal_png,number_time_png,number_score_json",
+			"keys": "bg_jpg,egret_icon_png,description_json,bg1_png,btn_setting_png,score_bar_png,b5_png,timer_png,b2_png,b3_png,progressbar_png,pink_bird_normal_png,purple_bird_normal_png,red_bird_normal_png,white_bird_normal_png,yellow_bird_normal_png,blue_bird_normal_png,green_bird_normal_png,number_time_png,number_score_json,piece_boom_png,piece_egg_png",
 			"name": "preload"
 		}
 	],
@@ -107,6 +107,16 @@
 			"type": "sheet",
 			"name": "number_score_json",
 			"subkeys": "eight,five,four,night,one,seven,six,three,two,zone"
+		},
+		{
+			"name": "piece_boom_png",
+			"type": "image",
+			"url": "assets/piece_boom.png"
+		},
+		{
+			"name": "piece_egg_png",
+			"type": "image",
+			"url": "assets/piece_egg.png"
 		}
 	]
 }

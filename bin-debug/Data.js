@@ -20,6 +20,8 @@ var Data = (function () {
         result.texture = texture;
         return result;
     };
+    Data.num = 0;
+    Data.postion = [0, 0];
     return Data;
 }());
 __reflect(Data.prototype, "Data");

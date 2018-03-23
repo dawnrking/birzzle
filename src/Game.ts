@@ -1,4 +1,4 @@
-class GameBg {
+class Game {
 	private _root:egret.DisplayObjectContainer;
 	public constructor(root:egret.DisplayObjectContainer) {
 		this._root = root;
@@ -62,6 +62,7 @@ class GameBg {
     this.Content.y = 0.385*Data.getStageHight();
     this._root.addChild(this.Content)
     }
+
 
     private Score:Score;
     private CreateScore () {

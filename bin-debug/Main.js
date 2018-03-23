@@ -150,7 +150,7 @@ var Main = (function (_super) {
      * Create a game scene
      */
     Main.prototype.createGameScene = function () {
-        var bg = new GameBg(this);
+        var bg = new Game(this);
         // let line = new egret.Shape();
         // line.graphics.lineStyle(2, 0xffffff);
         // line.graphics.moveTo(0, 0);

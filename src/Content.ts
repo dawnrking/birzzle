@@ -3,12 +3,12 @@ class Content extends egret.Sprite{
 		super();
 		this.draw();
 	}
-
 	private draw () {
-		let bgcontent = Data.createBitmapByName("b3_png");
-        this.addChild(bgcontent);
-		bgcontent.width =0.81*Data.getStageWidth();
-        bgcontent.height =0.85*bgcontent.height;
+		let bgContent = new ContentBg();
+        this.addChild(bgContent);
 		
+		let bird:BirdRow = new BirdRow();
+		this.addChild(bird);
 	}
+
 }

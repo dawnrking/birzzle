@@ -19,4 +19,8 @@ class Data {
         result.texture = texture;
         return result;
     }
+
+    public static num:number = 0;
+
+    public static postion:Array<number> = [0,0];
 }

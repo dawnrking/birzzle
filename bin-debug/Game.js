@@ -1,8 +1,8 @@
 var __reflect = (this && this.__reflect) || function (p, c, t) {
     p.__class__ = c, t ? t.push(c) : t = [c], p.__types__ = p.__types__ ? t.concat(p.__types__) : t;
 };
-var GameBg = (function () {
-    function GameBg(root) {
+var Game = (function () {
+    function Game(root) {
         this._root = root;
         this.setBg();
         this.CreateTimer();
@@ -10,7 +10,7 @@ var GameBg = (function () {
         this.CreateContent();
         this.CreateScore();
     }
-    GameBg.prototype.setBg = function () {
+    Game.prototype.setBg = function () {
         var stageW = Data.getStageWidth();
         var stageH = Data.getStageHight();
         var sky = Data.createBitmapByName("bg1_png");
@@ -32,32 +32,32 @@ var GameBg = (function () {
         seticon.x = 20;
         seticon.y = 20;
     };
-    GameBg.prototype.CreateTimer = function () {
+    Game.prototype.CreateTimer = function () {
         this.Timer = new Timer();
         this.Timer.addEventListener("gameOver", this.gameOver, this);
         this.Timer.x = 0.1 * Data.getStageWidth();
         this.Timer.y = 0.317 * Data.getStageHight();
         this._root.addChild(this.Timer);
     };
-    GameBg.prototype.gameOver = function () {
+    Game.prototype.gameOver = function () {
         console.log('gameOver');
     };
-    GameBg.prototype.startGame = function () {
+    Game.prototype.startGame = function () {
         this.Timer.start();
     };
-    GameBg.prototype.CreateContent = function () {
+    Game.prototype.CreateContent = function () {
         this.Content = new Content();
         this.Content.x = 0.095 * Data.getStageWidth();
         this.Content.y = 0.385 * Data.getStageHight();
         this._root.addChild(this.Content);
     };
-    GameBg.prototype.CreateScore = function () {
+    Game.prototype.CreateScore = function () {
         this.Score = new Score();
         this._root.addChild(this.Score);
         this.Score.x = Data.getStageWidth() - this.Score.width - 20;
         this.Score.y = 20;
     };
-    return GameBg;
+    return Game;
 }());
-__reflect(GameBg.prototype, "GameBg");
-//# sourceMappingURL=GameBg.js.map
+__reflect(Game.prototype, "Game");
+//# sourceMappingURL=Game.js.map

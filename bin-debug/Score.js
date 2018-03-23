@@ -19,7 +19,6 @@ var Score = (function (_super) {
         var scorebg = Data.createBitmapByName("score_bar_png");
         this.addChild(scorebg);
         var zone = Data.createBitmapByName("number_score_json.one");
-        zone.anchorOffsetX = 15;
         this.addChild(zone);
     };
     return Score;

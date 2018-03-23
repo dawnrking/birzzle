@@ -93,7 +93,7 @@ class Main extends egret.DisplayObjectContainer {
      * Create a game scene
      */
     private createGameScene() {
-        let bg = new GameBg(this);
+        let bg = new Game(this);
         // let line = new egret.Shape();
         // line.graphics.lineStyle(2, 0xffffff);
         // line.graphics.moveTo(0, 0);
